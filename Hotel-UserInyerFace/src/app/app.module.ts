@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './component/navbar/navbar.component';
@@ -7,6 +8,7 @@ import { LandingPageComponent } from './component/landing-page/landing-page.comp
 import { BookingPageComponent } from './component/booking-page/booking-page.component';
 import { CheckoutPageComponent } from './component/checkout-page/checkout-page.component';
 import { AppRoutingModule } from './app-routing.module';
+import { MyBookingComponent } from './component/my-booking/my-booking.component';
 
 @NgModule({
   declarations: [
@@ -14,11 +16,13 @@ import { AppRoutingModule } from './app-routing.module';
     NavbarComponent,
     LandingPageComponent,
     BookingPageComponent,
-    CheckoutPageComponent
+    CheckoutPageComponent,
+    MyBookingComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
