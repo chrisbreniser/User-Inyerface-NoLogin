@@ -1,7 +1,8 @@
-<div id="menu" class="flex-fill d-none d-md-flex nav">
+<div id="menu" class="nav flex-column">
+    <li class = "nav-item"><p class="nav-link sprint" [routerLink]="notMenu.routerLink">{{notMenu.name}}</p></li>
     <li class="nav-item" *ngFor="let menuItem of menuList">
-      <p class="nav-link sprint" [routerLink]="menuItem.routerLink">
+      <a class="nav-link sprint" [routerLink]="menuItem.routerLink">
         {{ menuItem.name }}
-      </p>
+      </a>
     </li>
   </div>

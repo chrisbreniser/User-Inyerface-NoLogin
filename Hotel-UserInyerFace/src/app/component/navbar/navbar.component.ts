@@ -8,6 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
+  notMenu = {
+  
+      name: 'Hotel UserInyerface',
+      routerLink: '/home'
+    
+  }
   menuList = [
     {
       name: 'Create Booking',
