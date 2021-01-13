@@ -9,6 +9,7 @@ import { BookingPageComponent } from './component/booking-page/booking-page.comp
 import { CheckoutPageComponent } from './component/checkout-page/checkout-page.component';
 import { AppRoutingModule } from './app-routing.module';
 import { MyBookingComponent } from './component/my-booking/my-booking.component';
+import { RoomSelectComponent } from './component/booking-page/room-select/room-select.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { MyBookingComponent } from './component/my-booking/my-booking.component'
     LandingPageComponent,
     BookingPageComponent,
     CheckoutPageComponent,
-    MyBookingComponent
+    MyBookingComponent,
+    RoomSelectComponent
   ],
   imports: [
     BrowserModule,

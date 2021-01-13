@@ -1,0 +1,20 @@
+<div class="container-fluid">
+    <ul class="list-group list-group-horizontal">
+        <li class="list-group-item col-3">
+            {{room.desc}}
+        </li>
+        <li class="list-group-item col-4">
+            <img src="{{room.photo}}" height="300px" width="500px">
+        </li>
+        <li class="list-group-item col-2">
+            <ul class="list-group">
+                <li class="list-group-item"><span>Room Number: #</span>{{room.roomNumber}}</li>
+                <li class="list-group-item"><span>Beds: </span>{{room.beds}}</li>
+                <li class="list-group-item"><span>Cost: $</span>{{room.cost}}</li>
+                <li class="list-group-item"><span>Room Type: </span>{{room.type}}</li>
+                <button type="button" class="btn btn-success">Remove</button>
+                <button type="button" class="btn btn-danger">Book This Room</button>
+            </ul>
+        </li>
+    </ul>
+</div>

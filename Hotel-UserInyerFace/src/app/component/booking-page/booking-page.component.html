@@ -1,1 +1,6 @@
 <p>booking-page works!</p>
+<ul class="list-group">
+    <li *ngFor="let room of rooms">
+        <app-room-select [room]=room></app-room-select>
+    </li>
+</ul>

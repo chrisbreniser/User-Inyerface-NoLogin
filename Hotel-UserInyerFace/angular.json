@@ -120,5 +120,8 @@
       }
     }
   },
-  "defaultProject": "Hotel-UserInyerFace"
+  "defaultProject": "Hotel-UserInyerFace",
+  "cli": {
+    "analytics": false
+  }
 }
