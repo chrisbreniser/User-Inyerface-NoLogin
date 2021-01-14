@@ -22,6 +22,10 @@ export class NavbarComponent implements OnInit {
     {
       name: 'My Booking',
       routerLink: '/myBooking'
+    },
+    {
+      name: 'Checkout',
+      routerLink: '/checkout'
     }
   ]
 

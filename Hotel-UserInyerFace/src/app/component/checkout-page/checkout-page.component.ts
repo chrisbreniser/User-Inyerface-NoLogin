@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Room } from 'model/room';
+import { CheckoutService } from 'src/app/service/checkout-page/checkout.service';
 
 @Component({
   selector: 'app-checkout-page',
@@ -7,9 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CheckoutPageComponent implements OnInit {
 
-  constructor() { }
+  room: Room;
+
+  constructor(private checkOutService: CheckoutService) { }
 
   ngOnInit(): void {
+      this.room = this.checkOutService.getCheckoutRoom();
+      console.log(this.room);
   }
 
 }

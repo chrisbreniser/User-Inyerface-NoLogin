@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Room } from 'model/room';
+import { CheckoutService } from 'src/app/service/checkout-page/checkout.service';
 
 @Component({
   selector: 'app-room-select',
@@ -10,9 +11,14 @@ export class RoomSelectComponent implements OnInit {
 
   @Input() room : Room;
 
-  constructor() { }
+
+  constructor(private checkoutService: CheckoutService) { }
 
   ngOnInit(): void {
+   
   }
 
+  addToCheckout(){
+    this.checkoutService.setCheckoutRoom(this.room);
+  }
 }

@@ -10,6 +10,7 @@ import { CheckoutPageComponent } from './component/checkout-page/checkout-page.c
 import { AppRoutingModule } from './app-routing.module';
 import { MyBookingComponent } from './component/my-booking/my-booking.component';
 import { RoomSelectComponent } from './component/booking-page/room-select/room-select.component';
+import { PopOutComponent } from './component/booking-page/pop-out/pop-out.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { RoomSelectComponent } from './component/booking-page/room-select/room-s
     BookingPageComponent,
     CheckoutPageComponent,
     MyBookingComponent,
-    RoomSelectComponent
+    RoomSelectComponent,
+    PopOutComponent
   ],
   imports: [
     BrowserModule,

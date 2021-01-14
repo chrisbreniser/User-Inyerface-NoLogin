@@ -1,10 +1,12 @@
+<app-pop-out #appPopOut [room] = room></app-pop-out>
 <div class="container-fluid">
     <ul class="list-group list-group-horizontal">
         <li class="list-group-item col-3">
             {{room.desc}}
         </li>
         <li class="list-group-item col-4">
-            <img src="{{room.photo}}" height="300px" width="500px">
+            <img src="{{room.photo}}" height="300px" width="500px" (click) = "appPopOut.toggleShow()">
+            <a (click) = "appPopOut.toggleShow()">Additional Features</a>
         </li>
         <li class="list-group-item col-2">
             <ul class="list-group">
@@ -13,7 +15,7 @@
                 <li class="list-group-item"><span>Cost: $</span>{{room.cost}}</li>
                 <li class="list-group-item"><span>Room Type: </span>{{room.type}}</li>
                 <button type="button" class="btn btn-success">Remove</button>
-                <button type="button" class="btn btn-danger">Book This Room</button>
+                <button type="button" class="btn btn-danger" (click) = "addToCheckout()" routerLink = "/checkout">Book This Room</button>
             </ul>
         </li>
     </ul>
