@@ -32,6 +32,15 @@ export class RoomService {
     roomNumber : 500,
     service : true,
     type : RoomType.ExecutiveSuite
+  },
+  {
+    desc : 'A room that is not okey',
+    photo : 'assets/photos/room2.jpg',
+    beds : 2,
+    cost : 500,
+    roomNumber : 505,
+    service : true,
+    type : RoomType.Basic
   }]
 
   constructor() { }
