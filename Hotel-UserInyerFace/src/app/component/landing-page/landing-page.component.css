@@ -1,0 +1,31 @@
+.intro {
+    text-align: center;
+    margin-right: 15%;
+    margin-left: 10%;
+    font-size: x-large;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.big-fake {
+
+  border-radius: 100%;
+  font-size: xxx-large;
+  height: 400px; 
+  width: 400px;
+
+}
+
+.supimg {
+    height: 250px; 
+    width: 400px;
+}
+
+.supimgs {
+    height: 300px; 
+    width: 500px;
+}
