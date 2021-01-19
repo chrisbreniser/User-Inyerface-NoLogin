@@ -1,4 +1,4 @@
-<div *ngIf = "room != undefined">
+<div *ngIf = "room != undefined" class="checkout-page">
 <div class="container-fluid">
     <ul class="list-group list-group-horizontal">
         <li class="list-group-item col-3">
@@ -14,7 +14,31 @@
                 <li class="list-group-item"><span>Cost: $</span>{{room.cost}}</li>
                 <li class="list-group-item"><span>Room Type: </span>{{room.type}}</li>
             </ul>
-        </li>
+        </li>        
+    </ul>
+    <br>
+    <ul class="list-group">
+        <form class="form-group" [formGroup]="checkoutForm" (ngSubmit)="onSubmit()">
+            <label for="ssn">Social Security Number:</label>&nbsp;
+            <input type="number" id="ssn" formControlName="ssn" class="form-control" placeholder="Social Secuirty Number">
+            <br>
+            <label for="ccn">Credit Card Number:</label>&nbsp;
+            <input type="number" id="ccn" formControlName="ccn" class="form-control" placeholder="Credit Card Number">
+            <br>
+            <label for="exp">Expiration Date:</label>&nbsp;
+            <input type="date" id="exp" formControlName="exp" class="form-control">
+            <br>
+            <label for="cvc">CVC:</label>&nbsp;
+            <input type="number" name="cvc" formControlName="cvc" class="form-control" placeholder="CVC">
+            <br>
+            <label for="first">First Name:</label>&nbsp;
+            <input type="text" id="first" formControlName="first" class="form-control" placeholder="First Name">
+            <br>
+            <label>Last Name:</label>&nbsp;
+            <input type="text" id="last" formControlName="last" class="form-control" placeholder="Last Name">
+            <br>
+            <button type="submit" class="btn btn-primary" [disabled]="checkoutForm.invalid" routerLink="/myBooking">Book Room</button>
+        </form>
     </ul>
 </div>
 </div>
