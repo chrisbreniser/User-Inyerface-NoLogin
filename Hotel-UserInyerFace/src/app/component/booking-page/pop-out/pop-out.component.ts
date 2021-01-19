@@ -1,4 +1,4 @@
-import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Room } from 'model/room';
 
 @Component({
@@ -10,7 +10,7 @@ export class PopOutComponent implements OnInit {
 
   @Input() room: Room;
   @Input() isShow: boolean;
-  @Output() isShownEvent = new EventEmitter<boolean>();
+
 
   constructor() { }
 

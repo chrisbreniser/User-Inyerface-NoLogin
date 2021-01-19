@@ -13,6 +13,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { MyBookingComponent } from './component/my-booking/my-booking.component';
 import { RoomSelectComponent } from './component/booking-page/room-select/room-select.component';
 import { PopOutComponent } from './component/booking-page/pop-out/pop-out.component';
+import { PopOutsComponent } from './component/landing-page/pop-out/pop-out.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { PopOutComponent } from './component/booking-page/pop-out/pop-out.compon
     CheckoutPageComponent,
     MyBookingComponent,
     RoomSelectComponent,
-    PopOutComponent
+    PopOutComponent,
+    PopOutsComponent
   ],
   imports: [
     BrowserModule,

@@ -1,3 +1,4 @@
+<app-pop-outs #appPopOuts></app-pop-outs>
 <div class = "alignment">
 <div class = "logo">
     <a href = "https://en.wikipedia.org/wiki/Main_Page"><img class = "supimg" src = 'assets/photos/BookNow.png'></a>
@@ -6,7 +7,7 @@
 </div>
 
 <p class = "intro">Hi, welcome to the Hotel Reservation interface! nothing is going on at the moment,
-    but if you look reallllly closely, you find the button thats <a (click) = "sound.play()" routerLink>here</a> to access the navbar to start booking!
+    but if you look reallllly closely, you find the button thats <a (click) = "sound.play(); appPopOuts.toggleShow();" routerLink>here</a> to access the navbar to start booking!
 </p>
 <div class="d-flex justify-content-center">
     <img class = "supimgs" src = 'assets/photos/sparkle.gif'>
