@@ -6,7 +6,6 @@
         </li>
         <li class="list-group-item col-4">
             <img src="{{room.photo}}" height="300px" width="500px" (click) = "appPopOut.toggleShow()">
-            <a (click) = "appPopOut.toggleShow()">Additional Features</a>
         </li>
         <li class="list-group-item col-2">
             <ul class="list-group">
@@ -14,7 +13,7 @@
                 <li class="list-group-item"><span>Beds: </span>{{room.beds}}</li>
                 <li class="list-group-item"><span>Cost: $</span>{{room.cost}}</li>
                 <li class="list-group-item"><span>Room Type: </span>{{room.type}}</li>
-                <button type="button" class="btn btn-success">Remove</button>
+                <button type="button" class="btn btn-success" (click) = "removeRoom()">Remove</button>
                 <button type="button" class="btn btn-danger" (click) = "addToCheckout()" routerLink = "/checkout">Book This Room</button>
             </ul>
         </li>

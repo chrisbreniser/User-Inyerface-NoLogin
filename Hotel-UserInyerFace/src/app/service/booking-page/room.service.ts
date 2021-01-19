@@ -7,38 +7,38 @@ import { Room, RoomType } from 'model/room';
 export class RoomService {
 
   private rooms : Room[] = [{
+    roomNumber : 102,
     desc : 'A room that is good',
     photo : 'assets/photos/room2.jpg',
     beds : 2,
     cost : 400,
-    roomNumber : 2,
-    service : true,
-    type : RoomType.Suite
-  },
-  {
-    desc : 'A room that is bad',
-    photo : 'assets/photos/room404.jpg',
-    beds : 1,
-    cost : 800,
-    roomNumber : 404,
-    service : false,
-    type : RoomType.Basic
-  },
-  {
-    desc : 'A room that is okey',
-    photo : 'assets/photos/room404.jpg',
-    beds : 1,
-    cost : 500,
-    roomNumber : 500,
     service : true,
     type : RoomType.ExecutiveSuite
   },
   {
-    desc : 'A room that is not okey',
-    photo : 'assets/photos/room2.jpg',
+    roomNumber : 404,
+    desc : 'A room that is bad',
+    photo : 'assets/photos/room404.jpg',
+    beds : 1,
+    cost : 800,
+    service : false,
+    type : RoomType.Basic
+  },
+  {
+    roomNumber : 500,
+    desc : 'A room that is okey',
+    photo : 'assets/photos/room500.webp',
+    beds : 1,
+    cost : 500,
+    service : true,
+    type : RoomType.Basic
+  },
+  {
+    roomNumber : 505,
+    desc : 'A room that is not okay',
+    photo : 'assets/photos/room505.webp',
     beds : 2,
     cost : 500,
-    roomNumber : 505,
     service : true,
     type : RoomType.Basic
   }]
@@ -48,6 +48,14 @@ export class RoomService {
   /** GET rooms from local database */
   getRooms(): Room[] {
     return this.rooms;
+  }
+
+  /** DELETE room from local database using entire object */
+  removeRoom(room : Room) {
+    const index = this.rooms.indexOf(room, 0);
+    if (index > -1) {
+      this.rooms.splice(index, 1);
+    }
   }
 
 }
