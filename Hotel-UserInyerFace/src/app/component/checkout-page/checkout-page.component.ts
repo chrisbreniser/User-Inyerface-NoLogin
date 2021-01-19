@@ -3,6 +3,7 @@ import { Room } from 'model/room';
 import { CheckoutService } from 'src/app/service/checkout-page/checkout.service';
 import { MyBookingService } from 'src/app/service/myBooking-page/my-booking.service';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-checkout-page',
@@ -15,7 +16,7 @@ export class CheckoutPageComponent implements OnInit {
 
   checkoutForm = {} as FormGroup;
 
-  constructor(private checkOutService: CheckoutService, private myBookingService: MyBookingService) { }
+  constructor(private checkOutService: CheckoutService, private myBookingService: MyBookingService, private router: Router) { }
 
   ngOnInit(): void {
       this.room = this.checkOutService.getCheckoutRoom();
@@ -50,6 +51,7 @@ export class CheckoutPageComponent implements OnInit {
 
   public onSubmit() {
     this.myBookingService.addBookedRoom(this.room);
+    this.router.navigate(['/myBooking']);
   }
 
 }
