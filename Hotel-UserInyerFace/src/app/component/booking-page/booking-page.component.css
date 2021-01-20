@@ -1,4 +1,10 @@
 .rooms-list {
     margin-bottom: 75px;
-    margin-top: 150px;
+}
+
+.create-booking-title {
+    font-size: x-large; 
+    margin: auto;
+    margin-top: 50px;
+    margin-left: 50px;
 }

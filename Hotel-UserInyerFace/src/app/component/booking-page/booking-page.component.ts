@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { Room } from 'model/room';
-import { CheckoutService } from 'src/app/service/checkout-page/checkout.service';
 import { RoomService } from '../../service/booking-page/room.service';
 
 @Component({

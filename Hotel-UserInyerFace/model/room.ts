@@ -1,9 +1,9 @@
 export interface Room {
+    roomNumber : number;
     desc : string;
     photo : string;
     beds : number;
     cost : number;
-    roomNumber : number;
     service : boolean; 
     type : RoomType;
 }
@@ -12,7 +12,7 @@ export enum RoomType {
     Basic = "Basic",
     Suite = "Suite",
     Family = "Family",
-    ExecutiveSuite = "ExecutiveSuite",
+    ExecutiveSuite = "Executive Suite",
 }
 
 export interface BookedRoom {
