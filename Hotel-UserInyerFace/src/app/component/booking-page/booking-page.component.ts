@@ -19,5 +19,4 @@ export class BookingPageComponent implements OnInit {
     console.log(this.rooms);
   }
 
-
 }

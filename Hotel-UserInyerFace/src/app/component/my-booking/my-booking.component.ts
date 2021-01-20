@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Room } from 'model/room';
+import { BookedRoom } from 'model/room';
 import { MyBookingService } from 'src/app/service/myBooking-page/my-booking.service';
 
 @Component({
@@ -9,12 +9,13 @@ import { MyBookingService } from 'src/app/service/myBooking-page/my-booking.serv
 })
 export class MyBookingComponent implements OnInit {
 
-  rooms:Room[];
+  bookedRooms:BookedRoom[];
 
   constructor(private myBookingService: MyBookingService) { }
 
   ngOnInit(): void {
-    this.rooms = this.myBookingService.getBookedRooms();
+    this.bookedRooms = this.myBookingService.getBookedRooms();
+    console.log(this.bookedRooms);
   }
 
 }

@@ -1,18 +1,18 @@
 <ul class="list-group rooms-list">
-    <li *ngFor="let room of rooms;">
+    <li *ngFor="let bookedroom of bookedRooms;">
         <ul class="list-group list-group-horizontal">
             <li class="list-group-item col-3">
-                {{room.desc}}
+                {{bookedroom.room.desc}}
             </li>
             <li class="list-group-item col-4">
-                <img src="{{room.photo}}" height="300px" width="500px">
+                <img src="{{bookedroom.room.photo}}" height="300px" width="500px">
             </li>
             <li class="list-group-item col-2">
                 <ul class="list-group">
-                    <li class="list-group-item"><span>Room Number: #</span>{{room.roomNumber}}</li>
-                    <li class="list-group-item"><span>Beds: </span>{{room.beds}}</li>
-                    <li class="list-group-item"><span>Cost: $</span>{{room.cost}}</li>
-                    <li class="list-group-item"><span>Room Type: </span>{{room.type}}</li>
+                    <li class="list-group-item"><span>Room Number: #</span>{{bookedroom.room.roomNumber}}</li>
+                    <li class="list-group-item"><span>Beds: </span>{{bookedroom.room.beds}}</li>
+                    <li class="list-group-item"><span>Cost: $</span>{{bookedroom.room.cost}}</li>
+                    <li class="list-group-item"><span>Room Type: </span>{{bookedroom.room.type}}</li>
                 </ul>
             </li>
         </ul>

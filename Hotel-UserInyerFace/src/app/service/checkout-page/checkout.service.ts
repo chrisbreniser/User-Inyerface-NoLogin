@@ -17,4 +17,8 @@ export class CheckoutService {
   getCheckoutRoom(): Room{
     return this.checkoutRoom;
   }
+
+  clearCheckoutRoom(): void {
+    this.checkoutRoom = null;
+  }
 }

@@ -1,4 +1,18 @@
-.checkout-page{
+.checkout-page {
     margin-bottom: 75px;
     margin-top: 150px;
+}
+
+input {
+    margin-bottom: 1rem;
+}
+
+#cost {
+    font-size: 3pt;
+}
+
+#submit-button {
+    margin-top: 1rem;
+    margin-left: 45%;
+    margin-right: 45%;
 }
