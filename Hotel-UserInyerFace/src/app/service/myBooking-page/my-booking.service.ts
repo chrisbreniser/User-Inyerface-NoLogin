@@ -1,21 +1,21 @@
 import { Injectable } from '@angular/core';
-import { Room } from 'model/room';
+import { BookedRoom, Room } from 'model/room';
 
 @Injectable({
   providedIn: 'root'
 })
 export class MyBookingService {
 
-  myRooms:Room[] = [];  
+  myBookedRooms:BookedRoom[] = [];
 
   constructor() { }
 
-  addBookedRoom(room: Room){
-      this.myRooms.push(room);
+  addBookedRoom(bookedRoom: BookedRoom){
+      this.myBookedRooms.push(bookedRoom);
   }
 
-  getBookedRooms(): Room[]{
-    return this.myRooms;
+  getBookedRooms(): BookedRoom[]{
+    return this.myBookedRooms;
   }
 
 }

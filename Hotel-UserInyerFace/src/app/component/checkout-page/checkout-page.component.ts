@@ -12,7 +12,7 @@ import { Router } from '@angular/router';
 })
 export class CheckoutPageComponent implements OnInit {
 
-  bookedRoom: BookedRoom;
+  bookedRoom: BookedRoom = {} as BookedRoom;
   room: Room;
 
   checkoutForm = {} as FormGroup;
@@ -21,6 +21,7 @@ export class CheckoutPageComponent implements OnInit {
 
   ngOnInit(): void {
       this.room = this.checkOutService.getCheckoutRoom();
+      console.log(this.bookedRoom);
       
       this.checkoutForm = new FormGroup({
         in: new FormControl(
@@ -59,10 +60,11 @@ export class CheckoutPageComponent implements OnInit {
   }
 
   public onSubmit() {
-    this.bookedRoom.room = this.checkOutService.getCheckoutRoom();
+    this.bookedRoom.room = this.room;
     this.bookedRoom.checkIn = this.checkoutForm.controls.in.value;
     this.bookedRoom.checkOut = this.checkoutForm.controls.out.value;
     this.myBookingService.addBookedRoom(this.bookedRoom);
+    this.checkOutService.clearCheckoutRoom();
     this.router.navigate(['/myBooking']);
   }
 
