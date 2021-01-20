@@ -1,17 +1,13 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Room } from 'model/room';
 
 @Component({
-  selector: 'app-pop-out',
+  selector: 'app-pop-outs',
   templateUrl: './pop-out.component.html',
   styleUrls: ['./pop-out.component.css']
 })
-export class PopOutComponent implements OnInit {
-
-  @Input() room: Room;
+export class PopOutsComponent implements OnInit {
   @Input() isShow: boolean;
-
-
+  
   constructor() { }
 
   ngOnInit(): void {
@@ -21,4 +17,5 @@ export class PopOutComponent implements OnInit {
   toggleShow() {
     this.isShow = !this.isShow;
   }
+
 }

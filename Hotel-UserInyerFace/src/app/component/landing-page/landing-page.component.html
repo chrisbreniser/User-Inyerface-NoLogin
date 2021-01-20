@@ -1,5 +1,18 @@
-<p>landing-page works!</p>
+<app-pop-outs #appPopOuts></app-pop-outs>
+<div class = "alignment">
+<div class = "logo">
+    <a href = "https://en.wikipedia.org/wiki/Main_Page"><img class = "supimg" src = 'assets/photos/BookNow.png'></a>
+    <img src = 'assets/photos/chotto.jpg'>
+    <img class = "supimg" src = 'assets/photos/BookNow.png'>
+</div>
 
-<p>Hi, welcome to the Hotel Reservation interface! nothing is going on at the moment,
-    but if you look reallllly closely, you find the button thats <a [routerLink]>here</a> to access the navbar to start booking!
+<p class = "intro">Hi, welcome to the Hotel Reservation interface! nothing is going on at the moment,
+    but if you look reallllly closely, you find the button thats <a (click) = "sound.play(); appPopOuts.toggleShow();" routerLink>here</a> to access the navbar to start booking!
 </p>
+<div class="d-flex justify-content-center">
+    <img class = "supimgs" src = 'assets/photos/sparkle.gif'>
+    <button class="big-fake btn btn-warning btn-large">SHOW NAVBAR</button>
+    <img class = "supimgs" src = 'assets/photos/sparkle.gif'>
+</div>
+
+</div>

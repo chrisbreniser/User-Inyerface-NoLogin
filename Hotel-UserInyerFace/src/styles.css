@@ -1,7 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~bootstrap/dist/css/bootstrap.css";
 
-:root{
-    font-family: "Comic Sans MS", "Comic Sans", cursive;
+div{
+    font-family: "Comic Sans MS", "Comic Sans", cursive, "Curlz MT";
     background-color: rgb(107, 252, 107);
 }
