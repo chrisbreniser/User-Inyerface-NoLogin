@@ -14,3 +14,9 @@ export enum RoomType {
     Family = "Family",
     ExecutiveSuite = "Executive Suite",
 }
+
+export interface BookedRoom {
+    room : Room;
+    checkIn : Date;
+    checkOut : Date;
+}
