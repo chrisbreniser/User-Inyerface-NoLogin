@@ -21,6 +21,15 @@
             <form class="form-group" [formGroup]="checkoutForm" (ngSubmit)="onSubmit()">
                 <ul class="list-group list-group-horizontal">
                     <div class="col-2"></div>
+                    <li class="list-group-item col-8">          
+                        <label for="in">Check In Date:</label>
+                        <input type="date" id="in" formControlName="in" class="form-control">
+                        <label for="out">Check Out Date:</label>
+                        <input type="date" id="out" formControlName="out" class="form-control">
+                    </li>
+                </ul>
+                <ul class="list-group list-group-horizontal">
+                    <div class="col-2"></div>
                     <li class="list-group-item col-4">          
                         <label for="ssn">Social Security Number:</label>
                         <input type="number" id="ssn" formControlName="ssn" class="form-control" placeholder="Social Secuirty Number">
