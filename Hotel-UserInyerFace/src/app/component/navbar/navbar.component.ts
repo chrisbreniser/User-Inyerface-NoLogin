@@ -20,12 +20,12 @@ export class NavbarComponent implements OnInit {
       routerLink: '/newBooking'
     },
     {
-      name: 'My Booking',
-      routerLink: '/myBooking'
+      name: 'My Cart',
+      routerLink: '/checkout'
     },
     {
-      name: 'Checkout',
-      routerLink: '/checkout'
+      name: 'My Booking',
+      routerLink: '/myBooking'
     }
   ]
 

@@ -1,8 +1,14 @@
+<div *ngIf="bookedRooms.length < 1" class="alert alert-primary col-4 no-rooms-alert" role="alert">
+    You have not booked any rooms!
+</div>
 <ul class="list-group rooms-list">
-    <li *ngFor="let bookedroom of bookedRooms;">
+    <li *ngFor="let bookedroom of bookedRooms;" class="container-fluid">
         <ul class="list-group list-group-horizontal">
             <li class="list-group-item col-3">
-                {{bookedroom.room.desc}}
+                <ul class="list-group">
+                    <li class="list-group-item"><span>Check In Date: </span>{{bookedroom.checkIn}}</li>
+                    <li class="list-group-item"><span>Check Out Date: </span>{{bookedroom.checkOut}}</li>
+                </ul>
             </li>
             <li class="list-group-item col-4">
                 <img src="{{bookedroom.room.photo}}" height="300px" width="500px">
@@ -13,8 +19,10 @@
                     <li class="list-group-item"><span>Beds: </span>{{bookedroom.room.beds}}</li>
                     <li class="list-group-item"><span>Cost: $</span>{{bookedroom.room.cost}}</li>
                     <li class="list-group-item"><span>Room Type: </span>{{bookedroom.room.type}}</li>
+                    <li class="list-group-item"><span>Desc: </span>{{bookedroom.room.desc}}</li>
                 </ul>
             </li>
         </ul>
+        <br>
     </li>
 </ul>

@@ -5,5 +5,5 @@ li {
 #menu {
     position: absolute;
     right: 100px;
-    float: right;
+    /* float: right; */
   } 

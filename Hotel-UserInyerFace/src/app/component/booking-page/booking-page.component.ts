@@ -9,7 +9,7 @@ import { RoomService } from '../../service/booking-page/room.service';
 })
 export class BookingPageComponent implements OnInit {
 
-  rooms : Room[];
+  rooms : Room[] = null;
 
   constructor(private roomService: RoomService) { }
 

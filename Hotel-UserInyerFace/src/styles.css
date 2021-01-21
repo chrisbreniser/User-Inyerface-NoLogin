@@ -1,7 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~bootstrap/dist/css/bootstrap.css";
 
+html{
+    background-color: rgb(107, 252, 107);
+
+}
+
 div{
     font-family: "Comic Sans MS", "Comic Sans", cursive, "Curlz MT";
     background-color: rgb(107, 252, 107);
+
 }

@@ -16,3 +16,23 @@ input {
     margin-left: 45%;
     margin-right: 45%;
 }
+
+.no-rooms-alert {
+    margin-top: 200px;
+    margin-left: 30%;
+}
+
+#red {
+    color: blue;
+    background-color: green;
+}
+
+#green {
+    color: yellow;
+    background-color: red;
+}
+
+#yellow {
+    color: fuchsia;
+    background-color: pink;
+}
